@@ -3,13 +3,6 @@ package com.example.learnkotlin.kotlin
 import android.renderscript.Int2
 
 fun information(age: Int) {
-//    if (age == 20) {
-//        println("Da du tuoi lay vo")
-//    } else if (age > 20) {
-//        println("Lay vo nhanh khong e")
-//    } else {
-//        println("Chua du tuoi lay vo")
-//    }
     when(age) {
         in 1..19 -> {
             println("$age tuoi van con non va xanh lam!")
@@ -30,11 +23,15 @@ fun getAge(age1: Int, age2: Int) : Int {
 }
 
 internal fun getRole(name: String) {
-    if (name == "Nhat Minh") {
-        println("$name la con")
-    } else if (name == "Trung Kien") {
-        println("$name la bo")
-    } else {
-        println("$name la me")
+    when (name) {
+        "Nhat Minh" -> {
+            println("$name la con")
+        }
+        "Trung Kien" -> {
+            println("$name la bo")
+        }
+        else -> {
+            println("$name la me")
+        }
     }
 }
