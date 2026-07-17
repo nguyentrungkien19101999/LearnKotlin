@@ -5,7 +5,7 @@ class Teacher(name: String,
               address: String,
               var salary: String,
               var level: String): Person(name, age, address) {
-    override fun toString(): String {
-        return "Teacher(salary='$salary', level='$level', ${super.toString()})"
+    fun getStringTeacher(): String {
+        return "Teacher(salary='$salary', level='$level', ${super.getStringPerson()})"
     }
 }

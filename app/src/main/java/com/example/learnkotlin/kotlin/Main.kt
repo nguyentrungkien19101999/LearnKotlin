@@ -3,12 +3,12 @@ package com.example.learnkotlin.kotlin
 import com.example.learnkotlin.kotlin.model.Teacher
 
 fun main() {
-    var ageFather: Int = 28
-    var ageSon: Int = 1
+    val ageFather: Int = 28
+    val ageSon: Int = 1
 
     information(ageFather)
 
-    var age: Int = getAge(ageFather, ageSon)
+    val age: Int = getAge(ageFather, ageSon)
 
     println("Con trai it hon bo $age tuoi")
 
@@ -21,5 +21,5 @@ fun main() {
         salary = "10.000.000 VND",
         level = "5")
 
-    println("----> $teacher")
+    println("----> ${teacher.getStringTeacher()}")
 }
