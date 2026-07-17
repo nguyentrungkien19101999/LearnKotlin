@@ -1,6 +1,5 @@
 package com.example.learnkotlin.kotlin
 
-import android.renderscript.Int2
 
 fun information(age: Int) {
     when(age) {
